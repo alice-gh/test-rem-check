@@ -1,1 +1,1 @@
-puts "Pardon, but Hello World!"
+puts "Pardon, but Hello World from the Sandbox!"
