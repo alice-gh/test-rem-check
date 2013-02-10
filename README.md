@@ -5,3 +5,14 @@ This is awesome.
 Test
 
 ## Bye
+
+
+Charactercharactercharactercharacter.
+
+Then the markdown in Japanese should be,
+
+Charactercharacter** character **character.
+
+Though for now we should write it like,
+
+Charactercharacter ** character ** character.
