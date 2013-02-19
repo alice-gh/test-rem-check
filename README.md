@@ -18,5 +18,12 @@ Though for now we should write it like,
 
 Charactercharacter ** character ** character.
 
-1. [ ] some item
-2. [ ] another item
+1. Item1
+  * Item2
+  * Item3
+
+
+* Item1
+  * Item2
+  * Item3
+
