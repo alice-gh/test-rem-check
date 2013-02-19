@@ -30,9 +30,3 @@ Charactercharacter ** character ** character.
     * Item2.1
     * Item2.2
 
-Word
-
-* Item2
-  * Item2.1
-  * Item2.2
-
