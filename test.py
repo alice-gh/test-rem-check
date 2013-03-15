@@ -1,17 +1,36 @@
-from rootpy.tree import Cut
+from rootpy.tree import Tree, TreeModel
+from rootpy.types import FloatCol, BoolCol
 from rootpy.io import root_open
-from ROOT import TMVA
+from random import gauss
+import random
 
-infile = root_open('sample.root')
-outfile = root_open('tmva_output.root', 'recreate')
-factory = TMVA.Factory("TMVAClassification", outfile, "AnalysisType=Classification")
-factory.AddVariable("a", 'F')
-factory.AddVariable("b", 'F')
-factory.SetInputTrees(infile.sample, Cut('label==1'), Cut('label==0'))
-factory.PrepareTrainingAndTestTree(Cut(), Cut(), "SplitMode=Random:NormMode=NumEvents")
-factory.BookMethod(TMVA.Types.kBDT, "BDT", "NTrees=850:nEventsMin=150:MaxDepth=3:BoostType=AdaBoost:AdaBoostBeta=0.5:SeparationType=GiniIndex:nCuts=-1")
-factory.TrainAllMethods()
-factory.TestAllMethods()
-factory.EvaluateAllMethods()
-outfile.close()
-infile.close()
+random.seed(0)
+
+
+class Sample(TreeModel):
+    a = FloatCol()
+    b = FloatCol()
+    label = BoolCol()
+
+
+with root_open('sample.root', 'recreate'):
+    tree = Tree('sample', model=Sample)
+    for i in xrange(int(1e4)):
+        if i % 4 == 0:
+            tree.a = gauss(1, 1)
+            tree.b = gauss(1, 1)
+            tree.label = True
+        elif i % 4 == 1:
+            tree.a = gauss(1, 1)
+            tree.b = gauss(-1.5, 1)
+            tree.label = False
+        elif i % 4 == 2:
+            tree.a = gauss(-1.5, 1)
+            tree.b = gauss(-1, 1)
+            tree.label = True
+        else:
+            tree.a = gauss(-1, 1)
+            tree.b = gauss(1, 1)
+            tree.label = False
+        tree.Fill()
+    tree.write()
