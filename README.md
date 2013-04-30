@@ -13,7 +13,5 @@ SCALE | COUNT(*) | NUM_POINTS | NUM_WEIGHT | NUM_WEIGHT_AND_POINTS | NUM_WEIGHT_
 4     |    10293 |       8369 |          0 |                     0 |                        0 |                     8369
 # Just Checking Something
 
-here
-
 
 # See Ya
