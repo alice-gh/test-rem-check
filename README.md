@@ -4,8 +4,6 @@ This is awesome.
 <div style="background-color: #990000;">Goodbye World</div>
 Test
 
-## Bye
-
 SCALE | COUNT(*) | NUM_POINTS | NUM_WEIGHT | NUM_WEIGHT_AND_POINTS | NUM_WEIGHT_AND_NO_POINTS | NUM_POINTS_AND_NO_WEIGHT
 ----- | -------: | ---------: | ---------: | --------------------: | -----------------------: | -----------------------:
       |      325 |          0 |          0 |                     0 |                        0 |                        0
