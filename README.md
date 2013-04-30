@@ -14,4 +14,4 @@ SCALE | COUNT(*) | NUM_POINTS | NUM_WEIGHT | NUM_WEIGHT_AND_POINTS | NUM_WEIGHT_
 # Just Checking Something
 
 
-# Bye
+# Bye bye
