@@ -15,3 +15,5 @@ SCALE | COUNT(*) | NUM_POINTS | NUM_WEIGHT | NUM_WEIGHT_AND_POINTS | NUM_WEIGHT_
 
 
 # Bye bye
+
+![youtube](https://plus.google.com/_/favicon?domain=youtube.com)
