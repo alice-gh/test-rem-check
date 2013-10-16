@@ -16,7 +16,7 @@ work only on PostgreSQL with psycopg2.  It has been tested on all major versions
 of Django (currently 1.2 through 1.6 inclusive).
 
 Fields
-================
+======
 
 The field types defined in the ``dbarray`` module are listed in the table below,
 along with each field's parent class (from ``django.db.models``), and the data
