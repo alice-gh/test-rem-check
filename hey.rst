@@ -1,6 +1,6 @@
-========================================================
+====================================================
 VeeWee Definitions for Creating Mageia Vagrant Boxes
-========================================================
+====================================================
 
 Various new and modified template definitions to create
 `veewee <https://github.com/jedi4ever/veewee>`_ boxes for
