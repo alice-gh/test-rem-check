@@ -1,7 +1,6 @@
 # Hello World
 # Hello World
 This is awesome.
-This is awesome.
 
 hi
 boop
